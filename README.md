@@ -1,8 +1,10 @@
 # sp-decryptor
+
 Decrypt Store Procedure using RC4 Algorithm
+
 Reference: https://en.wikipedia.org/wiki/RC4
 
-To run this script SQL Server **Dedicated Admin Connection (DAC)** is required.
+To run this script in SQL server **Dedicated Admin Connection (DAC)** is required.
 
 > Enabling DAC using TSQL Command:
 `Use master
