@@ -4,7 +4,7 @@ Reference: https://en.wikipedia.org/wiki/RC4
 
 To run this script SQL Server **Dedicated Admin Connection (DAC)** is required.
 
-> ##Enabling DAC using TSQL Command:
+> Enabling DAC using TSQL Command:
 `Use master
 GO
 sp_configure 'remote admin connections', 1
