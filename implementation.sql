@@ -3,16 +3,15 @@
 --select *  FROM sys.sysobjects AS SOV
 
 
-SELECT imageval
-FROM   sys.sysobjvalues
-WHERE  objid = OBJECT_ID(N'dbo.test_procedure', N'P')
+-- SELECT imageval
+-- FROM   sys.sysobjvalues
+-- WHERE  objid = OBJECT_ID(N'dbo.test_procedure', N'P')
 
 USE test;
  
 DECLARE
     -- Note: OBJECT_ID only works for schema-scoped objects
      @objectid integer = OBJECT_ID(N'dbo.test_procedure', N'P'),
-	--@objectid integer = 1269579561,
     @family_guid binary(16),
     @objid binary(4),
     @subobjid binary(2),
@@ -52,5 +51,3 @@ PRINT CONVERT
         )
     );
 
-
---Select dbo.fnEncDecRc4('Orange12345', 'Hello123')
