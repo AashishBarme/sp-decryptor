@@ -27,5 +27,6 @@ Reference:
 
 
 Should create a .dll  of cs file
+`./csc.exe /target:library /out:decryptsp.dll decryptsp.cs`
 
 
